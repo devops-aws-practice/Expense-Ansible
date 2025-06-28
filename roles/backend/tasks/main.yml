@@ -3,10 +3,11 @@
 
 - name: Enable NodeJs 18 Version
   ansible.builtin.shell: dnf module enable nodejs:18 -y
-    - name: Installing NodeJs
-      ansible.builtin.dnf:
-        name: nodejs
-        state: present
+
+- name: Installing NodeJs
+  ansible.builtin.dnf:
+    name: nodejs
+    state: present
 
 - name: Copy Backend Service File
   ansible.builtin.template:
