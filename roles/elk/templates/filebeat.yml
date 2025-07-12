@@ -50,9 +50,9 @@ filebeat.inputs:
 
       # Optional additional fields. These fields can be freely picked
       # to add additional information to the crawled log files for filtering
-      fields:
-        component: {{ component }}
-      fields_under_root: true
+    fields:
+      component: {{ component }}
+
 #
 #        level: debug
 #        review: 1
