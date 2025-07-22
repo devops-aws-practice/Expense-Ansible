@@ -31,6 +31,6 @@ scrape_configs:
         labels:
           app: "prometheus"
 
-  - job_name: "prometheus"
+  - job_name: "ec2-nodes"
     static_configs:
       - targets: ["172.31.28.112:9100"]
