@@ -11,4 +11,4 @@
     state: present
     commit_message: Updates by ansible
     overwrite: true
-    path: /path/to/dashboards/foo.json
+    path: /tmp/dashboard.json
