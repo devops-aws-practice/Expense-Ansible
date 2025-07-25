@@ -104,7 +104,7 @@
       "targets": [
         {
           "editorMode": "code",
-          "expr": "(node_memory_MemFree_bytes{name=\"frontend-dev\"} + node_memory_Cached_bytes{name=\"frontend-dev\"} + node_memory_Buffers_bytes{name=\"frontend-dev\"}) / node_memory_MemTotal_bytes{name=\"frontend-dev\"} *100",
+          "expr": "(node_memory_MemFree_bytes{name=\"{{component}}-{{env}}\"} + node_memory_Cached_bytes{name=\"{{component}}-{{env}}\"} + node_memory_Buffers_bytes{name=\"{{component}}-{{env}}\"}) / node_memory_MemTotal_bytes{name=\"{{component}}-{{env}}\"} *100",
           {% raw %}
           "legendFormat": "{{name}}",
           {% endraw %}
@@ -225,7 +225,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "frontend",
+  "title": "{{component}}",
   "uid": "10ac1b00-9cc7-4e4f-b862-8aa1b9e8995a",
   "version": 10
 }
