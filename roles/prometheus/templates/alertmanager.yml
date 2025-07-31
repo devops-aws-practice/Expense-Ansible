@@ -24,7 +24,7 @@ global:
   smtp_smarthost: 'email-smtp.us-east-1.amazonaws.com:587'
   smtp_from: 'pushpakvattam@gmail.com'
   smtp_auth_username: "{{ lookup('amazon.aws.aws_ssm', 'ses-username', region='us-east-1' ) }}"
-  smtp_auth_password: '"{{ lookup('amazon.aws.aws_ssm', 'ses-password', region='us-east-1' ) }}"
+  smtp_auth_password: "{{ lookup('amazon.aws.aws_ssm', 'ses-password', region='us-east-1' ) }}"
   smtp_require_tls: true
 route:
   group_by: ['alertname']
