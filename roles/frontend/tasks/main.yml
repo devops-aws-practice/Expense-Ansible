@@ -41,3 +41,7 @@
     src: alert-rules.yml
     dest: /tmp/alert-rules.yml
 
+- name: Upload File to S3
+  community.aws.s3_sync:
+    bucket: prometheus-alert-rules-pv
+    file_root: /tmp/alert-rules.yml
