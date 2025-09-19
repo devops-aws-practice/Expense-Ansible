@@ -7,7 +7,7 @@
   community.grafana.grafana_dashboard:
     grafana_url: http://172.31.16.9:3000
 #    grafana_api_key: "{{ lookup('amazon.aws.aws_ssm', 'grafana.api_key', region='us-east-1' ) }}"
-    grafana_api_key: "glsa_T5Lttd3Bh999NCHuVa1k90NsaUN2Epl7_4320db3e"
+    grafana_api_key: "glsa_Ed7X4vGugzWVzQsYu4mG6uDlXQHYitNw_21ec2148"
     state: present
     commit_message: Updates by ansible
     overwrite: true
